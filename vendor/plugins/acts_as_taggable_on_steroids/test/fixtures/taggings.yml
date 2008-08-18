@@ -1,0 +1,42 @@
+# Posts
+rspec_tagging:
+  id: 1
+  tag_id: 1
+  taggable_id: <%= Fixtures.identify(:specing_foo) %>
+  taggable_type: Status
+  created_at: 2006-08-01
+  
+javascript_tagging:
+  id: 1
+  tag_id: 2
+  taggable_id: <%= Fixtures.identify(:playing_with_jquery) %>
+  taggable_type: Status
+  created_at: 2006-08-01
+
+design_tagging:
+  id: 1
+  tag_id: 3
+  taggable_id: <%= Fixtures.identify(:designing_ui_for_towncrier) %>
+  taggable_type: Status
+  created_at: 2006-08-01
+
+frontend_tagging:
+  id: 1
+  tag_id: 4
+  taggable_id: <%= Fixtures.identify(:designing_ui_for_towncrier) %>
+  taggable_type: Status
+  created_at: 2006-08-01
+
+frontend_tagging2:
+  id: 1
+  tag_id: 4
+  taggable_id: <%= Fixtures.identify(:playing_with_jquery) %>
+  taggable_type: Status
+  created_at: 2006-08-01
+
+towncrier:
+  id: 1
+  tag_id: 5
+  taggable_id: <%= Fixtures.identify(:designing_ui_for_towncrier) %>
+  taggable_type: Status
+  created_at: 2006-08-01

@@ -1,0 +1,13 @@
+%ul#all_ensembli
+  - @users.each do |user|
+    %li
+      %ul
+        - @statuses.reverse.each do |date, statuses|
+          %li
+          %ul#users
+            - statuses.group_by(&:user).each do |user, statuses|
+              %li.user{:class => user_class(user, current_user)}
+              .avatar_small= gravatar_for user
+              %h3= user.login
+              %ul#statuses
+                = render :partial => statuses

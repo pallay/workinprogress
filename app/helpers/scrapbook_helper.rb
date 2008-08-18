@@ -1,0 +1,2 @@
+module ScrapbookHelper
+end

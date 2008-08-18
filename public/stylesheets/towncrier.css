@@ -1,0 +1,117 @@
+html {
+  background: #f3fbfe url(/images/background_tile.jpg);	
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "Lucida Grande", "Lucida Sans", Verdana, sans-serif;
+  width: 800px;
+  margin: 20px;
+  border: 1px grey solid;
+  }
+
+#wrapper {
+	background: #fff;
+	padding: 10px; }
+
+#header {
+  font-size: 12px;
+  color: #000;
+  padding-top: 7px;
+  height: 50px;
+  background: url(/images/ensembli_logo.png) no-repeat; }
+  #header #user_bar {
+    float: right;
+    padding-right: 20px;
+    font-size: 1.4em; }
+    #header #user_bar li { float: left; padding: 0 5px; border-left: 1px solid grey;}
+    #header #user_bar li.first { border: none;}
+    #header #user_bar a {
+      color: #000; }
+
+#flash {
+  color: #fff;
+  background: #f00;
+  padding: 6px;
+  font-size: 13px; }
+
+#content {
+  padding: 20px 10px 10px 10px;
+   }
+
+h2 {
+	background-color: green;
+	color: #fff;
+  font-size: 12px;
+  padding: 4px;
+  display: inline; }
+
+h3 {
+  margin-top: 10px;
+  padding-bottom: 8px; }
+
+#users {
+  margin: 0 10px 20px 10px; }
+
+#statuses {
+  font-size: 13px;
+  margin: 5px 65px; }
+  #statuses li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 120px;
+    font-weight: bold; }
+  #statuses small {
+    font-weight: normal;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    text-align: center;
+    padding: 3px;
+    width: 100px;
+    margin-right: 20px;
+    background: #cecece;
+    color: #fff; }
+  #statuses strong {
+    display: block; }
+  #statuses .tags {
+    display: block;
+    color: #acacaa;
+    margin: 1px;
+    margin-top: 3px; }
+
+#new_status {
+	background: #fff;
+	padding: 5px;
+  font-size: 12px;
+  margin: 0 0 10px 0; }
+  #new_status .head {
+	  background: blue;
+	  padding: 5px;
+	  height: 20px;
+	  margin: 5px 0;
+	  color: #fff; }
+
+#left_col {
+	width: 60%;
+	float: left; }
+#right_col {
+	width: 40%;
+	float: right; }
+#bottom_col { 
+ }
+
+.user {
+  padding: 5px;
+  clear: both; }
+  .user .avatar {
+    float: left;
+    border: 1px solid #e4e4e4;
+    padding: 2px;
+    margin-right: 10px; }
+
+.highlight {
+  background: #fffee6; }
+
+.content {
+  margin-top: 25px;
+  margin-left: 50px; }

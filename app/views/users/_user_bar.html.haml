@@ -1,0 +1,11 @@
+#user_bar
+  - if logged_in?
+    %ul
+      %li.first= current_user.login
+      %li.first= "#{link_to "feedback", feedback_path, {:title => "Send me some feedback"}}"
+      %li= "#{link_to "settings", setting_path, {:title => "Edit your preferences"}}"
+      %li= "#{link_to "logout", logout_path, {:title => "Click to log out"}}"
+  - else
+    = link_to "Log in", login_path, {:title => "Log in"}
+    &nbsp;|&nbsp;
+    = link_to "Sign up", signup_path, {:title => "Create an account"}

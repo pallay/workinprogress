@@ -1,0 +1,5 @@
+#new_scrapbook
+  - form_for @scrapbook, :controller => 'scrapbook', :action => :create do |make|
+    = make.label :message, "Need something to recall?"
+    = make.text_area :item, :rows => 2
+    = make.submit "Remind Me"

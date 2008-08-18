@@ -1,0 +1,5 @@
+#new_status
+  - form_for @status do |make|
+    %p.head= make.label :message, "What are you working on?"
+    = make.text_field :message, :size => 50 
+    = make.submit "Update"

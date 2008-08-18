@@ -1,0 +1,5 @@
+%li
+  - if status.created_at > 1.day.ago
+    %small= status_time_ago_in_words(status.created_at)
+  %strong= status.message
+  %em.tags= status.tag_list
