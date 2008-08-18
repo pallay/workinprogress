@@ -15,7 +15,9 @@
 #right_col
   %p#office
     =current_user.login
-    is in the office today
+    is in the
+    =current_user.office
+    today
   = render :partial => 'scrapbooks/new'
   = render :partial => 'scrapbooks/index'
 

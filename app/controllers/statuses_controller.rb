@@ -12,7 +12,6 @@ class StatusesController < ApplicationController
       wants.xml   { render :xml => @statuses }
       wants.json  { render :json => @statuses }
     end
-
   end
   
   def tags
@@ -20,8 +19,7 @@ class StatusesController < ApplicationController
     new
     respond_to do |wants|
       wants.html  { @statuses = @statuses.group_by { |status| status.created_at.strftime("%j") }
-                    render :action => :index
-                  }
+                    render :action => :index }
       wants.xml   { render :xml => @statuses }
       wants.json  { render :json => @statuses }
     end

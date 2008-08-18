@@ -5,3 +5,4 @@ doc/api
 doc/app
 wip.tmproj
 db/*.sqlite3
+db/schema.rb

@@ -29,6 +29,7 @@ class User < ActiveRecord::Base
   has_many  :statuses, :dependent => :nullify
   has_many  :scrapbooks
   has_one   :current_status, :class_name => "Status", :order => "created_at", :dependent => :nullify
+  has_one   :office
   
   alias_attribute :to_s, :name
 
