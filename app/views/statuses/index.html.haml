@@ -16,9 +16,11 @@
   %p#office
     =current_user.login
     is in the
-    =current_user.office
+    =@location
     today
+#.contentBox
+   %a href="javascript://" onclick="Effect.Grow($(this).up('.scrapbook')); return false;">Scrapbook
+ #.scrapbook
+#bottom_col
   = render :partial => 'scrapbooks/new'
   = render :partial => 'scrapbooks/index'
-
-#bottom_col

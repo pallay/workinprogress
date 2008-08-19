@@ -12,6 +12,7 @@ class StatusesController < ApplicationController
       wants.xml   { render :xml => @statuses }
       wants.json  { render :json => @statuses }
     end
+    @location = current_user.office
   end
   
   def tags
